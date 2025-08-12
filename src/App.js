@@ -10,9 +10,9 @@ function App() {
   const [carrinho, setCarrinho] = useState([]);
 
   const produtos = [
-    { id: 1, nome: 'Camisa Gabriel Shop', preco: 59.90 },
-    { id: 2, nome: 'Boné Estiloso', preco: 39.90 },
-    { id: 3, nome: 'Tênis Urbano', preco: 129.90 }
+    { id: 1, nome: 'Tenis de corrida', preco: 39.90 },
+    { id: 2, nome: 'Gravata borboleta', preco: 59.90 },
+    { id: 3, nome: 'Avental Homem de Ferro', preco: 129.90 }
   ];
 
   const abrirModalLogin = () => setMostrarModalLogin(true);
@@ -32,7 +32,7 @@ function App() {
 
   return (
     <div>
-      <header style={{ padding: "20px", textAlign: "right", backgroundColor: "#fff", borderBottom: "1px solid #eee" }}>
+      <header style={{ padding: "20px", textAlign: "right", backgroundColor: "#e6bbbbff", borderBottom: "1px solid #e72020ff" }}>
         <button onClick={abrirCarrinho} style={{background: 'none', border: '1px solid #ccc', padding: '8px 16px', borderRadius: '5px', cursor: 'pointer'}}>
           Ver Carrinho ({carrinho.length})
         </button>
